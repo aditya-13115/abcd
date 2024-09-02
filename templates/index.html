@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Museum Ticket Booking</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <img src="{{ url_for('static', filename='assets/logo.png') }}" class="logo">
+                <ul class="nav-links">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <a href="#" class="register-btn">User Login</a>
+            </nav>
+            <div class="container">
+                <h1>Explore museums all over India</h1>
+                <div class="search-bar">
+                    <form action="/search" method="GET">
+                        <div class="location-input">
+                            <label>Location</label>
+                            <input type="text" name="location" placeholder="Where are you going?" required>
+                        </div>
+                        <div>
+                            <label>Date</label>
+                            <input type="text" name="date" placeholder="Add date">
+                        </div>
+                        <div>
+                            <label>No of people</label>
+                            <input type="text" name="people" placeholder="Add number">
+                        </div>
+                        <button type="submit"><img src="{{ url_for('static', filename='assets/search.png') }}" alt=""></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="sub-title">Places</h2>
+            <div class="exclusives">
+                <div>
+                    <a href="./mum.html">
+                        <img src="{{ url_for('static', filename='assets/mumbai.png') }}">
+                    </a>
+                    <span>
+                        <h3>Mumbai</h3>
+                    </span>
+                </div>
+                <div>
+                    <a href="./html/delhi.html">
+                        <img src="{{ url_for('static', filename='assets/delhi.png') }}">
+                    </a>
+                    <span>
+                        <h3>Delhi</h3>
+                    </span>
+                </div>
+                <div>
+                    <a href="html/chen.html">
+                        <img src="{{ url_for('static', filename='assets/chennai.png') }}">
+                    </a>
+                    <span>
+                        <h3>Chennai</h3>
+                    </span>
+                </div>
+                <div>
+                    <a href="./html/bang.html">
+                        <img src="{{ url_for('static', filename='assets/banglore.jpg') }}">
+                    </a>
+                    <span>
+                        <h3>Bangalore</h3>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="sec aboutus">
+                    <h2>About Us</h2>
+                    <p>
+                        The goal of this website is to serve as the ultimate resource for discovering and exploring the rich array of museums in India...
+                    </p>
+                </div>
+                <div class="sec quicklinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </div>
+                <div class="sec contactBx">
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li><span><i class='bx bxs-phone'></i></span><span>9930862612</span></li>
+                        <li><span><i class='bx bx-envelope'></i></span><p><a href="mailto:techherald1006@gmail.com">techherald1006@gmail.com</a></p></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <button class="redirect-button" onclick="window.location.href='https://cdn.botpress.cloud/webchat/v2/shareable.html?botId=a39239c7-3591-410c-b6af-69b42446619b';">💬</button>
+    </body>
+</html>
